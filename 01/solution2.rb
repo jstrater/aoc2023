@@ -47,9 +47,5 @@ def last_digit(raw_str)
 end
 
 puts ARGF.each_line.map { |line|
-  firstlast = "#{first_digit(line)}#{last_digit(line)}"
-  puts line.chomp
-  puts firstlast
-  puts
-  firstlast.to_i
+  "#{first_digit(line)}#{last_digit(line)}".to_i
 }.sum
